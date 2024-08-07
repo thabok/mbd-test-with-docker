@@ -33,9 +33,10 @@ util.print_rbt_results(response)
 # Create project report
 report = ep.post(f"scopes/{toplevel_scope_uid}/project-report", message="Creating test report")
 # export project report to a file called 'report.html'
-ep.post(f"reports/{report['uid']}", { 'exportPath': work_dir, 'newName': 'report' })
+report_dir = os.path.join(work_dir, 'reports')
+ep.post(f"reports/{report['uid']}", { 'exportPath': report_dir, 'newName': 'report' })
 
 # Save *.epp
 ep.put('profiles', { 'path': epp_file }, message="Saving profile")
 
-print('Finished with workflow and create a test report here: ' + work_dir)
+print('Finished with workflow and create a test report here: ' + report_dir)

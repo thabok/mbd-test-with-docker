@@ -36,3 +36,9 @@ jobs:
             --workdir "/workdir" \
             ep-ml:24.2_23b \
             python3 test/run_tests.py
+
+    - name: Publish test results to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./report
