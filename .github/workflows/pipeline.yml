@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch:
 
 jobs:
   test-docker:
@@ -34,4 +35,4 @@ jobs:
             --volume "${{github.workspace}}:/workdir" `
             --workdir "/workdir" `
             ep-ml:24.2_23b `
-            sh -c "pip3 install . && python3 test/test.py test/test.epp"
+            sh -c "python3 test/run_tests.py"
