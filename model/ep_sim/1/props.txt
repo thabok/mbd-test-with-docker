@@ -1,0 +1,4 @@
+#Wed Aug 07 16:36:37 CEST 2024
+topLevelSubsystem=m0807163636/Wrapper_seat_heating_control
+extractionInitScriptFileName=m0807163636_init.m
+extractionModelFileName=m0807163636.slx

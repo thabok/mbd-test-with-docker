@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SFunction mdfDialect="EP2.9">
+  <Types>
+    <EnumType name="boolean">
+      <EnumValue name="false" ordinal="0"/>
+      <EnumValue name="true" ordinal="1"/>
+    </EnumType>
+  </Types>
+  <Inports debug="false">
+    <Inport portNr="1" width="3" type="boolean">
+      <ScalarRefs>
+        <ScalarRef displayName="LEDFeedback_LEDFeedback(1)">OUTPUT:LEDFeedback_LEDFeedback(1)</ScalarRef>
+        <ScalarRef displayName="LEDFeedback_LEDFeedback(2)">OUTPUT:LEDFeedback_LEDFeedback(2)</ScalarRef>
+        <ScalarRef displayName="LEDFeedback_LEDFeedback(3)">OUTPUT:LEDFeedback_LEDFeedback(3)</ScalarRef>
+      </ScalarRefs>
+    </Inport>
+    <Inport kind="DataStoreWrite" type="uint8" signalName="dsout_HeatingActivate_SetHeatingCoil_temp" portNr="2">
+      <ScalarRefs>
+        <ScalarRef displayName="dsout_HeatingActivate_SetHeatingCoil_temp@dsout_HeatingActivate_SetHeatingCoil_temp">OUTPUT:Mock_HeatingActivate_SetHeatingCoil/dsout_HeatingActivate_SetHeatingCoil_temp</ScalarRef>
+      </ScalarRefs>
+    </Inport>
+  </Inports>
+</SFunction>

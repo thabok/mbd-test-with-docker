@@ -1,0 +1,37 @@
+name: Test model with BTC and Matlab in Docker
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  test-docker:
+    runs-on: self-hosted
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Build docker image
+      shell: bash
+      # shell: powershell
+      # run: |
+      #   $env:ML_LIC_CONTENT | Out-File -FilePath "${{github.workspace}}/docker/matlab.lic" -Encoding UTF8
+      #   $env:BTC_LIC_CONTENT | Out-File -FilePath "${{github.workspace}}/docker/btc.lic" -Encoding UTF8
+      #   docker build -t ep-ml:24.2_23b docker
+      run: |
+        echo "$ML_LIC_CONTENT" > "${GITHUB_WORKSPACE}/docker/matlab.lic"
+        echo "$BTC_LIC_CONTENT" > "${GITHUB_WORKSPACE}/docker/btc.lic"
+        docker build -t ep-ml:24.2_23b docker
+
+      env:
+        ML_LIC_CONTENT: ${{ secrets.ML_LICENSE }}
+        BTC_LIC_CONTENT: ${{ secrets.BTC_LICENSE }}
+
+    - name: Run tests (docker/linux)
+      run: |
+        docker run --rm --mac-address 02:42:ac:11:13:37 `
+            --volume "${{github.workspace}}:/workdir" `
+            --workdir "/workdir" `
+            ep-ml:24.2_23b `
+            sh -c "pip3 install . && python3 test/test.py test/test.epp"
