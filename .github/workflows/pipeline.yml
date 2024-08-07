@@ -9,12 +9,12 @@ on:
 jobs:
   test-docker:
     runs-on: self-hosted
+    if: ${{ github.event_name == 'workflow_dispatch' || contains(github.event.head_commit.message, '#test') }}
 
     steps:
     - uses: actions/checkout@v3
 
     - name: Build docker image
-      shell: bash
       # shell: powershell
       # run: |
       #   $env:ML_LIC_CONTENT | Out-File -FilePath "${{github.workspace}}/docker/matlab.lic" -Encoding UTF8
@@ -31,8 +31,8 @@ jobs:
 
     - name: Run tests (docker/linux)
       run: |
-        docker run --rm --mac-address 02:42:ac:11:13:37 `
-            --volume "${{github.workspace}}:/workdir" `
-            --workdir "/workdir" `
-            ep-ml:24.2_23b `
-            sh -c "python3 test/run_tests.py"
+        docker run --rm --mac-address 02:42:ac:11:13:37 \
+            --volume "${{github.workspace}}:/workdir" \
+            --workdir "/workdir" \
+            ep-ml:24.2_23b \
+            python3 test/run_tests.py
