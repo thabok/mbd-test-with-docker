@@ -9,7 +9,7 @@ on:
 
 env:
   EP_RELEASE: 24.2p0
-  MATLAB_RELEASE: R2023b
+  MATLAB_RELEASE: R2024a
 
 
 jobs:
