@@ -1,13 +1,14 @@
-# Starting from public image mathworks/matlab
+# Starting from public image mathworks/matlab & btces/ep
+# with default versions definde below (can be overwritten during build)
 ARG EP_RELEASE=24.2p0
 ARG MATLAB_RELEASE=R2023b
 
-# FROM btces/ep-migrator:${EP_RELEASE} as ep-migrator
 FROM btces/ep:${EP_RELEASE} AS ep
 FROM mathworks/matlab:${MATLAB_RELEASE} AS matlab
 
 # add arg to make it accessible in this layer
 ARG MATLAB_RELEASE
+ARG MATLAB_PRODUCTS="Embedded_Coder AUTOSAR_Blockset MATLAB_Coder Simulink Simulink_Coder Simulink_Coverage Stateflow"
 
 USER root
 RUN apt update && apt-get install -y wget
@@ -15,7 +16,7 @@ RUN wget -q https://www.mathworks.com/mpm/glnxa64/mpm && chmod +x mpm \
     && ./mpm install \
     --release=${MATLAB_RELEASE}  \
     --destination=/opt/matlab  \
-    --products Embedded_Coder AUTOSAR_Blockset MATLAB_Coder Simulink Simulink_Coder Simulink_Coverage Stateflow \
+    --products ${MATLAB_PRODUCTS} \
     && rm -f mpm /tmp/mathworks_root.log \
     && ln -f -s /opt/matlab/bin/matlab /usr/local/bin/matlab
 
