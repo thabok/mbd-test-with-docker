@@ -6,11 +6,9 @@ on:
       - main
   workflow_dispatch:
 
-
 env:
   EP_RELEASE: 24.2p0
   MATLAB_RELEASE: R2024a
-
 
 jobs:
   test-docker:

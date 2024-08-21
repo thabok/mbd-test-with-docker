@@ -2,7 +2,8 @@
 
 EP_MATLAB_PATH="/opt/ep/matlab"
 BTCEP_JAR_PATH="/opt/ep/btc_ep.jar"
-MATLAB_TOOLBOX_PATH="/opt/matlab/toolbox/local"
+MATLAB_ROOT=$(dirname $(dirname $(readlink -f $(which matlab))))
+MATLAB_TOOLBOX_PATH="$MATLAB_ROOT/toolbox/local"
 
 unzip -d "$EP_MATLAB_PATH" "$BTCEP_JAR_PATH" scripts/* spec/* x64/* linux/*
 mkdir "$EP_MATLAB_PATH/java"

@@ -3,7 +3,7 @@ import os
 
 from btc_embedded import EPRestApi, util
 
-# expect epp file with the same name as an mdl/slx file in the 'model' directory
+# expect epp file matching the mdl/slx file name the 'model' directory
 work_dir = os.path.abspath('model')
 epp_file = next((epp_file for epp_file in glob.glob(os.path.join(work_dir, '*.epp'))
          if os.path.exists(epp_file[:-4] + '.mdl') or
