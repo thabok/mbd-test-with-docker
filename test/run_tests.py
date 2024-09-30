@@ -1,5 +1,6 @@
 import glob
 import os
+from datetime import datetime
 
 from btc_embedded import EPRestApi, util
 
@@ -9,6 +10,7 @@ epp_file = next((epp_file for epp_file in glob.glob(os.path.join(work_dir, '*.ep
          if os.path.exists(epp_file[:-4] + '.mdl') or
             os.path.exists(epp_file[:-4] + '.slx')), None)
 if not epp_file: raise Exception(f"No BTC EmbeddedPlatform Project found in workdir '{work_dir}'")
+project_name = os.path.basename(epp_file)[:-4]
 
 # BTC EmbeddedPlatform API object
 ep = EPRestApi()
@@ -20,6 +22,7 @@ util.run_matlab_script(ep, os.path.join(work_dir, 'init_Wrapper_seat_heating_con
 ep.get('profiles/' + epp_file + '?discardCurrentProfile=true', message="Loading profile")
 
 # Execute requirements-based tests
+exec_start_time = datetime.now()
 scopes = ep.get('scopes')
 scope_uids = [scope['uid'] for scope in scopes]
 toplevel_scope_uid = scope_uids[0]
@@ -29,6 +32,16 @@ rbt_exec_payload = {
 }
 response = ep.post('scopes/test-execution-rbt', rbt_exec_payload, message="Executing requirements-based tests")
 util.print_rbt_results(response)
+test_cases = ep.get('test-cases-rbt')
+# Dump JUnit XML report
+util.dump_testresults_junitxml(
+    rbt_results=response,
+    scopes=scopes,
+    test_cases=test_cases,
+    start_time=exec_start_time,
+    project_name=project_name,
+    output_file=os.path.join(work_dir, 'test_results.xml')
+)
 
 # Create project report
 report = ep.post(f"scopes/{toplevel_scope_uid}/project-report", message="Creating test report")
