@@ -2,8 +2,6 @@ name: Test model with BTC and Matlab in Docker
 
 on:
   push:
-    branches:
-      - main
   workflow_dispatch:
 
 env:
