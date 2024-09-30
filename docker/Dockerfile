@@ -82,4 +82,5 @@ COPY btc.lic ${LICENSE_LOCATION}
 
 RUN python3 -c "from btc_embedded import EPRestApi;ep=EPRestApi(skip_matlab_start=True);exit()"  && rm ${LOG_DIR}/current.log
 
+ENTRYPOINT [ ]
 CMD [ ]
