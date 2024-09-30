@@ -1,4 +1,4 @@
-name: Test model with BTC and Matlab in Docker
+name: BTC Test
 
 on:
   push:
@@ -40,6 +40,8 @@ jobs:
           python3 test/run_tests.py
 
     - name: Publish test results to GitHub Pages
+      # only publish report on gh pages for main branch
+      if: github.ref == 'refs/heads/main'
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
