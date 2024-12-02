@@ -1,31 +1,18 @@
-*
-!*/
-!*.m
-!*.slx
-!*.dd
-!*.txt
-!*.sh
-!*.in
-!*.py
-!*.json
-!*.epp
-!*.yml
-!*.cfg
-!*.md
-!*.xml
-!*.template
-!Dockerfile
-!BTC_EP_Rte_Type.h
-!.gitignore
-!*.bash
 
-run.sh
-.idea/
-.pypirc
-build/
-dist/
-*.egg-info/
-__pycache__/
+# Simulink
+**/slprj/
+*.slxc
+*.slx.autosave
+*.mex64
 *_rtw/
-slprj/
+
+# BTC
+**/ep_sim/
+*.bak
 *_ep_stubs/
+*_btcdata/.cache/
+*.lic
+
+# Python
+__pycache__/
+*.pyc

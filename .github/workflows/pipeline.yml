@@ -1,4 +1,4 @@
-name: Test model with BTC and Matlab in Docker
+name: BTC Test
 
 on:
   push:
@@ -10,6 +10,7 @@ env:
 
 jobs:
   test-docker:
+    name: Test Execution
     runs-on: self-hosted
     if: ${{ github.event_name == 'workflow_dispatch' || contains(github.event.head_commit.message, '#test') }}
 
