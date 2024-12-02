@@ -28,7 +28,7 @@ scope_uids = [scope['uid'] for scope in scopes]
 toplevel_scope_uid = scope_uids[0]
 rbt_exec_payload = {
     'UIDs': scope_uids,
-   'data' : { 'execConfigNames' : [ 'SL MIL (TOPLEVEL)' ], 'forceExecute' : True }
+   'data' : { 'execConfigNames' : [ 'SL MIL (Toplevel)' ] }
 }
 response = ep.post('scopes/test-execution-rbt', rbt_exec_payload, message="Executing requirements-based tests")
 util.print_rbt_results(response)
