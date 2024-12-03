@@ -19,13 +19,13 @@ jobs:
 
     - name: Build docker image
       run: |
-        echo "$ML_LIC_CONTENT" > "${GITHUB_WORKSPACE}/docker/matlab.lic"
-        echo "$BTC_LIC_CONTENT" > "${GITHUB_WORKSPACE}/docker/btc.lic"
+        echo "$ML_LIC_CONTENT" > "${GITHUB_WORKSPACE}/matlab.lic"
+        echo "$BTC_LIC_CONTENT" > "${GITHUB_WORKSPACE}/btc.lic"
         if [[ "$(docker images -q ep-ml:${EP_RELEASE}_${MATLAB_RELEASE} 2> /dev/null)" == "" ]]; then
           docker build -t ep-ml:${EP_RELEASE}_${MATLAB_RELEASE} \
             --build-arg EP_RELEASE=${EP_RELEASE} \
             --build-arg MATLAB_RELEASE=${MATLAB_RELEASE} \
-            docker
+            .
         fi
 
       env:
