@@ -15,7 +15,7 @@ ep = EPRestApi()
 
 # Load a BTC EmbeddedPlatform profile (*.epp) and update it
 ep.get('profiles/' + epp_file + '?discardCurrentProfile=true', message="Loading profile")
-ep.put('architectures?performUpdateCheck=true', message="Updating model & generating code")
+ep.put('architectures', message="Updating model & generating code")
 
 # Execute requirements-based tests
 exec_start_time = datetime.now()

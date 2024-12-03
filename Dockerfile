@@ -3,7 +3,8 @@
 ARG EP_RELEASE=24.3p0
 ARG MATLAB_RELEASE=R2023b
 
-FROM btces/ep:${EP_RELEASE} AS ep
+#FROM btces/ep:${EP_RELEASE} AS ep
+FROM harbor.btc-es.local/ep/ep-${EP_RELEASE} AS ep
 FROM mathworks/matlab:${MATLAB_RELEASE} AS matlab
 
 # ----------------------------------------------------------------------------------------
@@ -26,7 +27,9 @@ RUN wget -q https://www.mathworks.com/mpm/glnxa64/mpm && chmod +x mpm \
 RUN export DEBIAN_FRONTEND=noninteractive && apt-get install -y gcc-11 && update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-11 100 && update-alternatives --config gcc && apt-get install -y g++-11 && update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-11 100 && update-alternatives --config g++ && apt-get install -y cpp-11 && update-alternatives --install /usr/bin/cpp cpp /usr/bin/cpp-11 100 && update-alternatives --config cpp
 RUN rm -f /home/matlab/Documents/MATLAB/startup.m
 # matlab licensing
-ENV MLM_LICENSE_FILE=27000@matlab.license.server
+ARG ML_LIC_PATH=/licenses/matlab.lic
+ENV MLM_LICENSE_FILE=${ML_LIC_PATH}
+#ENV MLM_LICENSE_FILE=27000@matlab.license.server
 
 # ----------------------------------------------------------------------------------------
 # BTC-specific configurations
@@ -37,13 +40,17 @@ COPY --chown=1000 --from=ep /root/.BTC /root/.BTC
 # integrate BTC with MATLAB
 RUN sudo chmod +x /opt/ep/addMLIntegration.bash && sudo /opt/ep/addMLIntegration.bash
 # btc licensing
-ENV LICENSE_LOCATION=27000@btc.license.server
+ARG LICENSE_LOCATION=/licenses/btc.lic
+ENV LICENSE_LOCATION=${LICENSE_LOCATION}
+#ENV LICENSE_LOCATION=27000@btc.license.server
 
 # install python module btc_embedded
 RUN pip3 install --no-cache-dir btc_embedded
 ENV PYTHONUNBUFFERED=1
 
 USER matlab
+ARG LICENSE_LOCATION=/licenses/btc.lic
+ENV LICENSE_LOCATION=${LICENSE_LOCATION}
 
 # Override default MATLAB entrypoint
 ENTRYPOINT [ ]
