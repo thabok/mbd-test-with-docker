@@ -53,6 +53,6 @@ jobs:
       if: success() || failure()
       with:
         name: Test results
-        path: results/test_results.xml
+        path: reports/test_results.xml
         reporter: jest-junit
         only-summary: 'false'
