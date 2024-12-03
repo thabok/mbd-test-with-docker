@@ -6,15 +6,18 @@
 EP_RELEASE=24.3p0
 MATLAB_RELEASE=R2023b
 
-docker build \
-    --build-arg EP_RELEASE=${EP_RELEASE} \
-    --build-arg MATLAB_RELEASE=${MATLAB_RELEASE} \
-    --tag ep-ml:${EP_RELEASE}_${MATLAB_RELEASE} \
-    .
+if [[ "$(docker images -q ep-ml:${EP_RELEASE}_${MATLAB_RELEASE} 2> /dev/null)" == "" ]]; then
+    docker build \
+        --build-arg EP_RELEASE=${EP_RELEASE} \
+        --build-arg MATLAB_RELEASE=${MATLAB_RELEASE} \
+        --tag ep-ml:${EP_RELEASE}_${MATLAB_RELEASE} \
+        .
+fi
 
 docker run \
     --rm \
     --volume "$(pwd):/workdir" \
     --workdir /workdir \
+    --mac-address 02-42-ac-11-13-37 \
     ep-ml:${EP_RELEASE}_${MATLAB_RELEASE} \
     python3 /workdir/scripts/run_tests.py
