@@ -1,6 +1,6 @@
 # Starting from public image mathworks/matlab & btces/ep
 # with default versions defined below (can be overwritten using build-args)
-ARG EP_RELEASE=24.2p0
+ARG EP_RELEASE=24.3p0
 ARG MATLAB_RELEASE=R2023b
 
 FROM btces/ep:${EP_RELEASE} AS ep

@@ -44,79 +44,87 @@ SystemActive = Simulink.Signal;
 SystemActive.DataType = 'boolean';
 SystemActive.CoderInfo.StorageClass = 'ExportedGlobal';
 
-TemperatureRanges_TemperatureStage1 = AUTOSAR.Parameter;
-TemperatureRanges_TemperatureStage1.Value = 30;
-TemperatureRanges_TemperatureStage1.CoderInfo.StorageClass = 'Custom';
-TemperatureRanges_TemperatureStage1.CoderInfo.Alias = '';
-TemperatureRanges_TemperatureStage1.CoderInfo.Alignment = -1;
-TemperatureRanges_TemperatureStage1.CoderInfo.CustomStorageClass = ...
+TemperatureRanges_Low = AUTOSAR.Parameter;
+TemperatureRanges_Low.Value = 30;
+TemperatureRanges_Low.CoderInfo.StorageClass = 'Custom';
+TemperatureRanges_Low.CoderInfo.Alias = '';
+TemperatureRanges_Low.CoderInfo.Alignment = -1;
+TemperatureRanges_Low.CoderInfo.CustomStorageClass = ...
   'CalPrm';
-TemperatureRanges_TemperatureStage1.CoderInfo.CustomAttributes.HeaderFile = '';
-TemperatureRanges_TemperatureStage1.CoderInfo.CustomAttributes.ElementName = ...
+TemperatureRanges_Low.CoderInfo.CustomAttributes.HeaderFile = '';
+TemperatureRanges_Low.CoderInfo.CustomAttributes.ElementName = ...
   'TemperatureStage1';
-TemperatureRanges_TemperatureStage1.CoderInfo.CustomAttributes.PortName = ...
+TemperatureRanges_Low.CoderInfo.CustomAttributes.PortName = ...
   'TemperatureRanges';
-TemperatureRanges_TemperatureStage1.CoderInfo.CustomAttributes.InterfacePath = ...
+TemperatureRanges_Low.CoderInfo.CustomAttributes.InterfacePath = ...
   '/Interfaces/IF_TemperatureValues';
-TemperatureRanges_TemperatureStage1.CoderInfo.CustomAttributes.CalibrationComponent = '';
-TemperatureRanges_TemperatureStage1.CoderInfo.CustomAttributes.ProviderPortName = '';
-TemperatureRanges_TemperatureStage1.Description = '';
-TemperatureRanges_TemperatureStage1.DataType = 'IDT_Temperature';
-TemperatureRanges_TemperatureStage1.Min = [];
-TemperatureRanges_TemperatureStage1.Max = [];
-TemperatureRanges_TemperatureStage1.DocUnits = '';
-TemperatureRanges_TemperatureStage1.SwCalibrationAccess = 'ReadWrite';
-TemperatureRanges_TemperatureStage1.DisplayFormat = '';
+TemperatureRanges_Low.CoderInfo.CustomAttributes.CalibrationComponent = '';
+TemperatureRanges_Low.CoderInfo.CustomAttributes.ProviderPortName = '';
+TemperatureRanges_Low.Description = '';
+TemperatureRanges_Low.DataType = 'IDT_Temperature';
+TemperatureRanges_Low.Min = [];
+TemperatureRanges_Low.Max = [];
+TemperatureRanges_Low.DocUnits = '';
+TemperatureRanges_Low.SwCalibrationAccess = 'ReadWrite';
+TemperatureRanges_Low.DisplayFormat = '';
 
-TemperatureRanges_TemperatureStage2 = AUTOSAR.Parameter;
-TemperatureRanges_TemperatureStage2.Value = 35;
-TemperatureRanges_TemperatureStage2.CoderInfo.StorageClass = 'Custom';
-TemperatureRanges_TemperatureStage2.CoderInfo.Alias = '';
-TemperatureRanges_TemperatureStage2.CoderInfo.Alignment = -1;
-TemperatureRanges_TemperatureStage2.CoderInfo.CustomStorageClass = ...
+TemperatureRanges_Medium = AUTOSAR.Parameter;
+TemperatureRanges_Medium.Value = 35;
+TemperatureRanges_Medium.CoderInfo.StorageClass = 'Custom';
+TemperatureRanges_Medium.CoderInfo.Alias = '';
+TemperatureRanges_Medium.CoderInfo.Alignment = -1;
+TemperatureRanges_Medium.CoderInfo.CustomStorageClass = ...
   'CalPrm';
-TemperatureRanges_TemperatureStage2.CoderInfo.CustomAttributes.HeaderFile = '';
-TemperatureRanges_TemperatureStage2.CoderInfo.CustomAttributes.ElementName = ...
+TemperatureRanges_Medium.CoderInfo.CustomAttributes.HeaderFile = '';
+TemperatureRanges_Medium.CoderInfo.CustomAttributes.ElementName = ...
   'TemperatureStage2';
-TemperatureRanges_TemperatureStage2.CoderInfo.CustomAttributes.PortName = ...
+TemperatureRanges_Medium.CoderInfo.CustomAttributes.PortName = ...
   'TemperatureRanges';
-TemperatureRanges_TemperatureStage2.CoderInfo.CustomAttributes.InterfacePath = ...
+TemperatureRanges_Medium.CoderInfo.CustomAttributes.InterfacePath = ...
   '/Interfaces/IF_TemperatureValues';
-TemperatureRanges_TemperatureStage2.CoderInfo.CustomAttributes.CalibrationComponent = '';
-TemperatureRanges_TemperatureStage2.CoderInfo.CustomAttributes.ProviderPortName = '';
-TemperatureRanges_TemperatureStage2.Description = '';
-TemperatureRanges_TemperatureStage2.DataType = 'IDT_Temperature';
-TemperatureRanges_TemperatureStage2.Min = [];
-TemperatureRanges_TemperatureStage2.Max = [];
-TemperatureRanges_TemperatureStage2.DocUnits = '';
-TemperatureRanges_TemperatureStage2.SwCalibrationAccess = 'ReadWrite';
-TemperatureRanges_TemperatureStage2.DisplayFormat = '';
+TemperatureRanges_Medium.CoderInfo.CustomAttributes.CalibrationComponent = '';
+TemperatureRanges_Medium.CoderInfo.CustomAttributes.ProviderPortName = '';
+TemperatureRanges_Medium.Description = '';
+TemperatureRanges_Medium.DataType = 'IDT_Temperature';
+TemperatureRanges_Medium.Min = [];
+TemperatureRanges_Medium.Max = [];
+TemperatureRanges_Medium.DocUnits = '';
+TemperatureRanges_Medium.SwCalibrationAccess = 'ReadWrite';
+TemperatureRanges_Medium.DisplayFormat = '';
 
-TemperatureRanges_TemperatureStage3 = AUTOSAR.Parameter;
-TemperatureRanges_TemperatureStage3.Value = 45;
-TemperatureRanges_TemperatureStage3.CoderInfo.StorageClass = 'Custom';
-TemperatureRanges_TemperatureStage3.CoderInfo.Alias = '';
-TemperatureRanges_TemperatureStage3.CoderInfo.Alignment = -1;
-TemperatureRanges_TemperatureStage3.CoderInfo.CustomStorageClass = ...
+TemperatureRanges_High = AUTOSAR.Parameter;
+TemperatureRanges_High.Value = 45;
+TemperatureRanges_High.CoderInfo.StorageClass = 'Custom';
+TemperatureRanges_High.CoderInfo.Alias = '';
+TemperatureRanges_High.CoderInfo.Alignment = -1;
+TemperatureRanges_High.CoderInfo.CustomStorageClass = ...
   'CalPrm';
-TemperatureRanges_TemperatureStage3.CoderInfo.CustomAttributes.HeaderFile = '';
-TemperatureRanges_TemperatureStage3.CoderInfo.CustomAttributes.ElementName = ...
+TemperatureRanges_High.CoderInfo.CustomAttributes.HeaderFile = '';
+TemperatureRanges_High.CoderInfo.CustomAttributes.ElementName = ...
   'TemperatureStage3';
-TemperatureRanges_TemperatureStage3.CoderInfo.CustomAttributes.PortName = ...
+TemperatureRanges_High.CoderInfo.CustomAttributes.PortName = ...
   'TemperatureRanges';
-TemperatureRanges_TemperatureStage3.CoderInfo.CustomAttributes.InterfacePath = ...
+TemperatureRanges_High.CoderInfo.CustomAttributes.InterfacePath = ...
   '/Interfaces/IF_TemperatureValues';
-TemperatureRanges_TemperatureStage3.CoderInfo.CustomAttributes.CalibrationComponent = '';
-TemperatureRanges_TemperatureStage3.CoderInfo.CustomAttributes.ProviderPortName = '';
-TemperatureRanges_TemperatureStage3.Description = '';
-TemperatureRanges_TemperatureStage3.DataType = 'IDT_Temperature';
-TemperatureRanges_TemperatureStage3.Min = [];
-TemperatureRanges_TemperatureStage3.Max = [];
-TemperatureRanges_TemperatureStage3.DocUnits = '';
-TemperatureRanges_TemperatureStage3.SwCalibrationAccess = 'ReadWrite';
-TemperatureRanges_TemperatureStage3.DisplayFormat = '';
+TemperatureRanges_High.CoderInfo.CustomAttributes.CalibrationComponent = '';
+TemperatureRanges_High.CoderInfo.CustomAttributes.ProviderPortName = '';
+TemperatureRanges_High.Description = '';
+TemperatureRanges_High.DataType = 'IDT_Temperature';
+TemperatureRanges_High.Min = [];
+TemperatureRanges_High.Max = [];
+TemperatureRanges_High.DocUnits = '';
+TemperatureRanges_High.SwCalibrationAccess = 'ReadWrite';
+TemperatureRanges_High.DisplayFormat = '';
 
-RTE_OK = 0;
+RTE_OK = Simulink.Parameter;
+RTE_OK.Value = 0;
+RTE_OK.CoderInfo.StorageClass = 'Custom';
+RTE_OK.CoderInfo.CustomStorageClass = 'Define';
+RTE_OK.Description = '';
+RTE_OK.DataType = 'boolean';
+RTE_OK.Min = 0;
+RTE_OK.Max = 1;
+%P_IDT_ButtonStatus.DocUnits = '';
 
 try
     seat_heating_control_defineIntEnumTypes
