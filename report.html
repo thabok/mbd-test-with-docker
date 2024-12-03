@@ -880,6 +880,9 @@ function toggleSection(div_id, clickable_id ) {
             </div>
             <div id="sectionNavigation_b2b">
                 <ul class="sectionList">
+                            <li onclick="expandSectionOnNavigation('b2b_b2bTest_div','b2b_b2bTest_section'); scrollToTargetAdjusted('b2b_b2bTest_section')">
+                                <a>Back-to-Back Test</a>
+                            </li>
                             <li onclick="expandSectionOnNavigation('b2b_codeAnalysis_div','b2b_codeAnalysis_section'); scrollToTargetAdjusted('b2b_codeAnalysis_section')">
                                 <a>Code Analysis</a>
                             </li>
@@ -888,7 +891,7 @@ function toggleSection(div_id, clickable_id ) {
         </div>
         <ul class="metainfo">
             <li><span>Creator:</span> matlab</li>        
-            <li><span>Creation date:</span> 12/3/24 2:06 PM</li>     
+            <li><span>Creation date:</span> 12/3/24 2:16 PM</li>     
         </ul>
     </div>
 
@@ -927,9 +930,9 @@ function toggleSection(div_id, clickable_id ) {
 
     <div class="statusContainer">
         <h5>Coverage (Handled)</h5>
-        <div class="coverageValue unknown-color">92.5%</div>
+        <div class="coverageValue ok-color">100%</div>
         <div class="coverageLabel">MC/DC</div>
-    <a class="unknown-color" onclick="combinedShowTopicAndScroll('rbt','rbt_codeAnalysis_section');">There are unhandled goals</a>
+    <a class="ok-color" onclick="combinedShowTopicAndScroll('rbt','rbt_codeAnalysis_section');">All goals are handled</a>
     </div>
 
     <div class="statusContainer">
@@ -947,6 +950,15 @@ function toggleSection(div_id, clickable_id ) {
                 <h3>Back-to-Back Testing</h3>
                 <div class="topicOverviewDiv">
                         <div class="topicOverviewSection">
+                            <div class="topicOverviewSectionHeader">Back-to-Back Test</div>
+                            <div class="topicOverviewSectionContent">
+    <div class="statusContainer">
+        <div class="statusIcon ok-glyph"></div>
+    <a class="ok-color" onclick="combinedShowTopicAndScroll('b2b','b2b_b2bTest_section');">All tests are passed</a>
+    </div>
+                        </div>
+                    </div>
+                        <div class="topicOverviewSection">
                             <div class="topicOverviewSectionHeader">Code Analysis</div>
                             <div class="topicOverviewSectionContent">
 
@@ -955,9 +967,9 @@ function toggleSection(div_id, clickable_id ) {
 
     <div class="statusContainer">
         <h5>Coverage (Handled)</h5>
-        <div class="coverageValue unknown-color">92.5%</div>
+        <div class="coverageValue ok-color">100%</div>
         <div class="coverageLabel">MC/DC</div>
-    <a class="unknown-color" onclick="combinedShowTopicAndScroll('b2b','b2b_codeAnalysis_section');">There are unhandled goals</a>
+    <a class="ok-color" onclick="combinedShowTopicAndScroll('b2b','b2b_codeAnalysis_section');">All goals are handled</a>
     </div>
 
     <div class="statusContainer">
@@ -1086,7 +1098,7 @@ function toggleSection(div_id, clickable_id ) {
                 </tr>
                 <tr>
                     <td>Import Date</td>
-                    <td>12/3/24 2:06 PM</td>
+                    <td>12/3/24 2:16 PM</td>
                 </tr>
                 <tr>
                     <td>Matlab Version</td>
@@ -1170,15 +1182,15 @@ function toggleSection(div_id, clickable_id ) {
                 </tr>
                 <tr>
                     <td>Import Date</td>
-                    <td>12/3/24 2:06 PM</td>
+                    <td>12/3/24 2:16 PM</td>
                 </tr>
                 <tr>
                     <td>Source Code Files</td>
-                    <td>/tmp/btc_temp_root/42-a853-f/csourcecollect-results/Da/seat_heating_control.c<br>/tmp/btc_temp_root/42-a853-f/csourcecollect-results/D7/Rte_SeatHeatControl.c<br>/tmp/btc_temp_root/42-a853-f/csourcecollect-results/D6/seat_heating_control_ep_rte_stub.c<br>/tmp/btc_temp_root/42-a853-f/csourcecollect-results/D2/Mock_HeatingActivate_SetHeatingCoil.c<br>/tmp/btc_temp_root/42-a853-f/csourcecollect-results/D2/Mock_HeatingRequest_GetButtonPressed.c<br>/tmp/btc_temp_root/42-a853-f/csourcecollect-results/D2/Rte_Call_SeatHeatControl_HeatingActivate_SetHeatingCoil.c<br>/tmp/btc_temp_root/42-a853-f/csourcecollect-results/D2/Rte_Call_SeatHeatControl_HeatingRequest_GetButtonPressed.c<br>/tmp/btc_temp_root/42-a853-f/csourcecollect-results/D2/Wrapper_seat_heating_control.c</td>
+                    <td>/tmp/btc_temp_root/42-bf59-f/csourcecollect-results/Da/seat_heating_control.c<br>/tmp/btc_temp_root/42-bf59-f/csourcecollect-results/D7/Rte_SeatHeatControl.c<br>/tmp/btc_temp_root/42-bf59-f/csourcecollect-results/D6/seat_heating_control_ep_rte_stub.c<br>/tmp/btc_temp_root/42-bf59-f/csourcecollect-results/D2/Mock_HeatingActivate_SetHeatingCoil.c<br>/tmp/btc_temp_root/42-bf59-f/csourcecollect-results/D2/Mock_HeatingRequest_GetButtonPressed.c<br>/tmp/btc_temp_root/42-bf59-f/csourcecollect-results/D2/Rte_Call_SeatHeatControl_HeatingActivate_SetHeatingCoil.c<br>/tmp/btc_temp_root/42-bf59-f/csourcecollect-results/D2/Rte_Call_SeatHeatControl_HeatingRequest_GetButtonPressed.c<br>/tmp/btc_temp_root/42-bf59-f/csourcecollect-results/D2/Wrapper_seat_heating_control.c</td>
                 </tr>
                 <tr>
                     <td>Include Paths</td>
-                    <td>/tmp/btc_temp_root/42-a853-f/csourcecollect-results<br>/tmp/btc_temp_root/42-a853-f/csourcecollect-results/Dd<br>/tmp/btc_temp_root/42-a853-f/csourcecollect-results/Dc<br>/tmp/btc_temp_root/42-a853-f/csourcecollect-results/Db<br>/tmp/btc_temp_root/42-a853-f/csourcecollect-results/D9<br>/tmp/btc_temp_root/42-a853-f/csourcecollect-results/D8<br>/tmp/btc_temp_root/42-a853-f/csourcecollect-results/D5<br>/tmp/btc_temp_root/42-a853-f/csourcecollect-results/D3<br>/tmp/btc_temp_root/42-a853-f/csourcecollect-results/D1</td>
+                    <td>/tmp/btc_temp_root/42-bf59-f/csourcecollect-results<br>/tmp/btc_temp_root/42-bf59-f/csourcecollect-results/Dd<br>/tmp/btc_temp_root/42-bf59-f/csourcecollect-results/Dc<br>/tmp/btc_temp_root/42-bf59-f/csourcecollect-results/Db<br>/tmp/btc_temp_root/42-bf59-f/csourcecollect-results/D9<br>/tmp/btc_temp_root/42-bf59-f/csourcecollect-results/D8<br>/tmp/btc_temp_root/42-bf59-f/csourcecollect-results/D5<br>/tmp/btc_temp_root/42-bf59-f/csourcecollect-results/D3<br>/tmp/btc_temp_root/42-bf59-f/csourcecollect-results/D1</td>
                 </tr>
                 <tr>
                     <td>Pre-Processor Definitions</td>
@@ -1257,7 +1269,7 @@ function toggleSection(div_id, clickable_id ) {
         </tr>
         <tr>
             <td>Import Date</td>
-            <td>12/3/24 2:06 PM</td>
+            <td>12/3/24 2:16 PM</td>
         </tr>
         <tr>
             <td>Matlab Version</td>
@@ -1312,15 +1324,15 @@ function toggleSection(div_id, clickable_id ) {
         </tr>
         <tr>
             <td>Import Date</td>
-            <td>12/3/24 2:06 PM</td>
+            <td>12/3/24 2:16 PM</td>
         </tr>
         <tr>
             <td>Source Code Files</td>
-            <td>/tmp/btc_temp_root/42-a853-f/csourcecollect-results/Da/seat_heating_control.c<br>/tmp/btc_temp_root/42-a853-f/csourcecollect-results/D7/Rte_SeatHeatControl.c<br>/tmp/btc_temp_root/42-a853-f/csourcecollect-results/D6/seat_heating_control_ep_rte_stub.c<br>/tmp/btc_temp_root/42-a853-f/csourcecollect-results/D2/Mock_HeatingActivate_SetHeatingCoil.c<br>/tmp/btc_temp_root/42-a853-f/csourcecollect-results/D2/Mock_HeatingRequest_GetButtonPressed.c<br>/tmp/btc_temp_root/42-a853-f/csourcecollect-results/D2/Rte_Call_SeatHeatControl_HeatingActivate_SetHeatingCoil.c<br>/tmp/btc_temp_root/42-a853-f/csourcecollect-results/D2/Rte_Call_SeatHeatControl_HeatingRequest_GetButtonPressed.c<br>/tmp/btc_temp_root/42-a853-f/csourcecollect-results/D2/Wrapper_seat_heating_control.c</td>
+            <td>/tmp/btc_temp_root/42-bf59-f/csourcecollect-results/Da/seat_heating_control.c<br>/tmp/btc_temp_root/42-bf59-f/csourcecollect-results/D7/Rte_SeatHeatControl.c<br>/tmp/btc_temp_root/42-bf59-f/csourcecollect-results/D6/seat_heating_control_ep_rte_stub.c<br>/tmp/btc_temp_root/42-bf59-f/csourcecollect-results/D2/Mock_HeatingActivate_SetHeatingCoil.c<br>/tmp/btc_temp_root/42-bf59-f/csourcecollect-results/D2/Mock_HeatingRequest_GetButtonPressed.c<br>/tmp/btc_temp_root/42-bf59-f/csourcecollect-results/D2/Rte_Call_SeatHeatControl_HeatingActivate_SetHeatingCoil.c<br>/tmp/btc_temp_root/42-bf59-f/csourcecollect-results/D2/Rte_Call_SeatHeatControl_HeatingRequest_GetButtonPressed.c<br>/tmp/btc_temp_root/42-bf59-f/csourcecollect-results/D2/Wrapper_seat_heating_control.c</td>
         </tr>
         <tr>
             <td>Include Paths</td>
-            <td>/tmp/btc_temp_root/42-a853-f/csourcecollect-results<br>/tmp/btc_temp_root/42-a853-f/csourcecollect-results/Dd<br>/tmp/btc_temp_root/42-a853-f/csourcecollect-results/Dc<br>/tmp/btc_temp_root/42-a853-f/csourcecollect-results/Db<br>/tmp/btc_temp_root/42-a853-f/csourcecollect-results/D9<br>/tmp/btc_temp_root/42-a853-f/csourcecollect-results/D8<br>/tmp/btc_temp_root/42-a853-f/csourcecollect-results/D5<br>/tmp/btc_temp_root/42-a853-f/csourcecollect-results/D3<br>/tmp/btc_temp_root/42-a853-f/csourcecollect-results/D1</td>
+            <td>/tmp/btc_temp_root/42-bf59-f/csourcecollect-results<br>/tmp/btc_temp_root/42-bf59-f/csourcecollect-results/Dd<br>/tmp/btc_temp_root/42-bf59-f/csourcecollect-results/Dc<br>/tmp/btc_temp_root/42-bf59-f/csourcecollect-results/Db<br>/tmp/btc_temp_root/42-bf59-f/csourcecollect-results/D9<br>/tmp/btc_temp_root/42-bf59-f/csourcecollect-results/D8<br>/tmp/btc_temp_root/42-bf59-f/csourcecollect-results/D5<br>/tmp/btc_temp_root/42-bf59-f/csourcecollect-results/D3<br>/tmp/btc_temp_root/42-bf59-f/csourcecollect-results/D1</td>
         </tr>
         <tr>
             <td>Pre-Processor Definitions</td>
@@ -1402,6 +1414,404 @@ function toggleSection(div_id, clickable_id ) {
             <tr>
               <td class="INFO_ICON"></td>
               <td>Some report extensions are not included.</td>
+              <td>Information</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="WARNING_ICON"></td>
+              <td>Host compiler is configured to generate 64 bit binaries, model checking employs 32 bit semantics.</td>
+              <td>Warning</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="WARNING_ICON"></td>
+              <td>The integer kind for wchar_t in the target configuration is not supported. The value is ignored.
+The integer kind for wchar_t in the target configuration is not supported. The value is ignored.
+</td>
+              <td>Warning</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="WARNING_ICON"></td>
+              <td>&quot;/tmp/ep/workdir/profiles/42-bf59-c/md/12697/model/Db/rtwtypes.h&quot;, line 47:
+          warning: last line of file ends without a newline
+  #endif /* RTWTYPES_H */
+                         ^
+          detected during compilation of secondary translation unit
+                    &quot;/tmp/ep/workdir/profiles/42-bf59-c/md/12697/model/D3/Rte_C
+                    all_SeatHeatControl_HeatingRequest_GetButtonPressed.c&quot;
+&quot;/tmp/ep/workdir/profiles/42-bf59-c/md/12697/model/Dd/Rte_Type.h&quot;, line 12:
+          warning: last line of file ends without a newline
+  #endif /* BTC_EP_EXTENSION_RTE_TYPE_H */
+                                          ^
+          detected during compilation of secondary translation unit
+                    &quot;/tmp/ep/workdir/profiles/42-bf59-c/md/12697/model/D3/Rte_C
+                    all_SeatHeatControl_HeatingRequest_GetButtonPressed.c&quot;
+&quot;/tmp/ep/workdir/profiles/42-bf59-c/md/12697/model/Dd/Rte_Type.h&quot;, line 12:
+          warning: last line of file ends without a newline
+  #endif /* BTC_EP_EXTENSION_RTE_TYPE_H */
+                                          ^
+          detected during compilation of secondary translation unit
+                    &quot;/tmp/ep/workdir/profiles/42-bf59-c/md/12697/model/D3/Rte_C
+                    all_SeatHeatControl_HeatingRequest_GetButtonPressed.c&quot;
+&quot;/tmp/ep/workdir/profiles/42-bf59-c/md/12697/model/Dd/Rte_Type.h&quot;, line 12:
+          warning: last line of file ends without a newline
+  #endif /* BTC_EP_EXTENSION_RTE_TYPE_H */
+                                          ^
+          detected during compilation of secondary translation unit
+                    &quot;/tmp/ep/workdir/profiles/42-bf59-c/md/12697/model/D3/Rte_C
+                    all_SeatHeatControl_HeatingRequest_GetButtonPressed.c&quot;
+&quot;/tmp/ep/workdir/profiles/42-bf59-c/md/12697/model/Dd/Rte_Type.h&quot;, line 12:
+          warning: last line of file ends without a newline
+  #endif /* BTC_EP_EXTENSION_RTE_TYPE_H */
+                                          ^
+          detected during compilation of secondary translation unit
+                    &quot;/tmp/ep/workdir/profiles/42-bf59-c/md/12697/model/D3/Rte_C
+                    all_SeatHeatControl_HeatingRequest_GetButtonPressed.c&quot;
+&quot;/tmp/ep/workdir/profiles/42-bf59-c/md/12697/model/Dd/Rte_Type.h&quot;, line 12:
+          warning: last line of file ends without a newline
+  #endif /* BTC_EP_EXTENSION_RTE_TYPE_H */
+                                          ^
+          detected during compilation of secondary translation unit
+                    &quot;/tmp/ep/workdir/profiles/42-bf59-c/md/12697/model/D3/Rte_C
+                    all_SeatHeatControl_HeatingRequest_GetButtonPressed.c&quot;
+&quot;/tmp/ep/workdir/profiles/42-bf59-c/md/12697/model/Dd/Rte_Type.h&quot;, line 12:
+          warning: last line of file ends without a newline
+  #endif /* BTC_EP_EXTENSION_RTE_TYPE_H */
+                                          ^
+          detected during compilation of secondary translation unit
+                    &quot;/tmp/ep/workdir/profiles/42-bf59-c/md/12697/model/D3/Rte_C
+                    all_SeatHeatControl_HeatingRequest_GetButtonPressed.c&quot;
+&quot;/tmp/ep/workdir/profiles/42-bf59-c/md/12697/model/Dd/Rte_Type.h&quot;, line 12:
+          warning: last line of file ends without a newline
+  #endif /* BTC_EP_EXTENSION_RTE_TYPE_H */
+                                          ^
+          detected during compilation of secondary translation unit
+                    &quot;/tmp/ep/workdir/profiles/42-bf59-c/md/12697/model/D3/Rte_C
+                    all_SeatHeatControl_HeatingRequest_GetButtonPressed.c&quot;
+&quot;/tmp/ep/workdir/profiles/42-bf59-c/md/12697/model/Dd/Rte_Type.h&quot;, line 12:
+          warning: last line of file ends without a newline
+  #endif /* BTC_EP_EXTENSION_RTE_TYPE_H */
+                                          ^
+          detected during compilation of secondary translation unit
+                    &quot;/tmp/ep/workdir/profiles/42-bf59-c/md/12697/model/D3/Rte_C
+                    all_SeatHeatControl_HeatingRequest_GetButtonPressed.c&quot;
+&quot;/tmp/ep/workdir/profiles/42-bf59-c/md/12697/anno/CodeAnnotation.c&quot;, line 805:
+          warning: integer conversion resulted in a change of sign
+    if ((left - right) == -1) obs-&gt;prop3 = 1;
+                          ^
+          detected during compilation of secondary translation unit
+                    &quot;/tmp/ep/workdir/profiles/42-bf59-c/md/12697/anno/CodeAnnot
+                    ation.c&quot;
+&quot;/tmp/ep/workdir/profiles/42-bf59-c/md/12697/anno/CodeAnnotation.c&quot;, line 1085:
+          warning: integer conversion resulted in a change of sign
+    if ((left - right) == -1) obs-&gt;prop3 = 1;
+                          ^
+          detected during compilation of secondary translation unit
+                    &quot;/tmp/ep/workdir/profiles/42-bf59-c/md/12697/anno/CodeAnnot
+                    ation.c&quot;
+&quot;/tmp/ep/workdir/profiles/42-bf59-c/md/12697/anno/CodeAnnotation.c&quot;, line 1365:
+          warning: integer conversion resulted in a change of sign
+    if ((left - right) == -1) obs-&gt;prop3 = 1;
+                          ^
+          detected during compilation of secondary translation unit
+                    &quot;/tmp/ep/workdir/profiles/42-bf59-c/md/12697/anno/CodeAnnot
+                    ation.c&quot;
+&quot;/tmp/ep/workdir/profiles/42-bf59-c/md/12697/anno/CodeAnnotation.c&quot;, line 1643:
+          warning: integer conversion resulted in a change of sign
+    if ((left - right) == -1) obs-&gt;prop3 = 1;
+                          ^
+          detected during compilation of secondary translation unit
+                    &quot;/tmp/ep/workdir/profiles/42-bf59-c/md/12697/anno/CodeAnnot
+                    ation.c&quot;
+&quot;/tmp/ep/workdir/profiles/42-bf59-c/md/12697/anno/CodeAnnotation.c&quot;, line 1920:
+          warning: integer conversion resulted in a change of sign
+    if ((left - right) == -1) obs-&gt;prop3 = 1;
+                          ^
+          detected during compilation of secondary translation unit
+                    &quot;/tmp/ep/workdir/profiles/42-bf59-c/md/12697/anno/CodeAnnot
+                    ation.c&quot;
+&quot;/tmp/ep/workdir/profiles/42-bf59-c/md/12697/anno/CodeAnnotation.c&quot;, line 2197:
+          warning: integer conversion resulted in a change of sign
+    if ((left - right) == -1) obs-&gt;prop3 = 1;
+                          ^
+          detected during compilation of secondary translation unit
+                    &quot;/tmp/ep/workdir/profiles/42-bf59-c/md/12697/anno/CodeAnnot
+                    ation.c&quot;
+&quot;/tmp/ep/workdir/profiles/42-bf59-c/md/12697/model/Db/rtwtypes.h&quot;, line 47:
+          warning: last line of file ends without a newline
+  #endif /* RTWTYPES_H */
+                         ^
+          detected during compilation of secondary translation unit
+                    &quot;/tmp/ep/workdir/profiles/42-bf59-c/md/12697/model/D3/Mock_
+                    HeatingRequest_GetButtonPressed.c&quot;
+&quot;/tmp/ep/workdir/profiles/42-bf59-c/md/12697/model/Dd/Rte_Type.h&quot;, line 12:
+          warning: last line of file ends without a newline
+  #endif /* BTC_EP_EXTENSION_RTE_TYPE_H */
+                                          ^
+          detected during compilation of secondary translation unit
+                    &quot;/tmp/ep/workdir/profiles/42-bf59-c/md/12697/model/D3/Mock_
+                    HeatingRequest_GetButtonPressed.c&quot;
+&quot;/tmp/ep/workdir/profiles/42-bf59-c/md/12697/model/Dd/Rte_Type.h&quot;, line 12:
+          warning: last line of file ends without a newline
+  #endif /* BTC_EP_EXTENSION_RTE_TYPE_H */
+                                          ^
+          detected during compilation of secondary translation unit
+                    &quot;/tmp/ep/workdir/profiles/42-bf59-c/md/12697/model/D3/Mock_
+                    HeatingRequest_GetButtonPressed.c&quot;
+&quot;/tmp/ep/workdir/profiles/42-bf59-c/md/12697/model/Dd/Rte_Type.h&quot;, line 12:
+          warning: last line of file ends without a newline
+  #endif /* BTC_EP_EXTENSION_RTE_TYPE_H */
+                                          ^
+          detected during compilation of secondary translation unit
+                    &quot;/tmp/ep/workdir/profiles/42-bf59-c/md/12697/model/D3/Mock_
+                    HeatingRequest_GetButtonPressed.c&quot;
+&quot;/tmp/ep/workdir/profiles/42-bf59-c/md/12697/model/Dd/Rte_Type.h&quot;, line 12:
+          warning: last line of file ends without a newline
+  #endif /* BTC_EP_EXTENSION_RTE_TYPE_H */
+                                          ^
+          detected during compilation of secondary translation unit
+                    &quot;/tmp/ep/workdir/profiles/42-bf59-c/md/12697/model/D3/Mock_
+                    HeatingRequest_GetButtonPressed.c&quot;
+&quot;/tmp/ep/workdir/profiles/42-bf59-c/md/12697/model/Dd/Rte_Type.h&quot;, line 12:
+          warning: last line of file ends without a newline
+  #endif /* BTC_EP_EXTENSION_RTE_TYPE_H */
+                                          ^
+          detected during compilation of secondary translation unit
+                    &quot;/tmp/ep/workdir/profiles/42-bf59-c/md/12697/model/D3/Mock_
+                    HeatingRequest_GetButtonPressed.c&quot;
+&quot;/tmp/ep/workdir/profiles/42-bf59-c/md/12697/model/Dd/Rte_Type.h&quot;, line 12:
+          warning: last line of file ends without a newline
+  #endif /* BTC_EP_EXTENSION_RTE_TYPE_H */
+                                          ^
+          detected during compilation of secondary translation unit
+                    &quot;/tmp/ep/workdir/profiles/42-bf59-c/md/12697/model/D3/Mock_
+                    HeatingRequest_GetButtonPressed.c&quot;
+&quot;/tmp/ep/workdir/profiles/42-bf59-c/md/12697/model/Dd/Rte_Type.h&quot;, line 12:
+          warning: last line of file ends without a newline
+  #endif /* BTC_EP_EXTENSION_RTE_TYPE_H */
+                                          ^
+          detected during compilation of secondary translation unit
+                    &quot;/tmp/ep/workdir/profiles/42-bf59-c/md/12697/model/D3/Mock_
+                    HeatingRequest_GetButtonPressed.c&quot;
+&quot;/tmp/ep/workdir/profiles/42-bf59-c/md/12697/model/Dd/Rte_Type.h&quot;, line 12:
+          warning: last line of file ends without a newline
+  #endif /* BTC_EP_EXTENSION_RTE_TYPE_H */
+                                          ^
+          detected during compilation of secondary translation unit
+                    &quot;/tmp/ep/workdir/profiles/42-bf59-c/md/12697/model/D3/Mock_
+                    HeatingRequest_GetButtonPressed.c&quot;
+&quot;/tmp/ep/workdir/profiles/42-bf59-c/md/12697/model/Db/rtwtypes.h&quot;, line 47:
+          warning: last line of file ends without a newline
+  #endif /* RTWTYPES_H */
+                         ^
+          detected during compilation of secondary translation unit
+                    &quot;/tmp/ep/workdir/profiles/42-bf59-c/md/12697/model/D3/Mock_
+                    HeatingActivate_SetHeatingCoil.c&quot;
+&quot;/tmp/ep/workdir/profiles/42-bf59-c/md/12697/model/Dd/Rte_Type.h&quot;, line 12:
+          warning: last line of file ends without a newline
+  #endif /* BTC_EP_EXTENSION_RTE_TYPE_H */
+                                          ^
+          detected during compilation of secondary translation unit
+                    &quot;/tmp/ep/workdir/profiles/42-bf59-c/md/12697/model/D3/Mock_
+                    HeatingActivate_SetHeatingCoil.c&quot;
+&quot;/tmp/ep/workdir/profiles/42-bf59-c/md/12697/model/Dd/Rte_Type.h&quot;, line 12:
+          warning: last line of file ends without a newline
+  #endif /* BTC_EP_EXTENSION_RTE_TYPE_H */
+                                          ^
+          detected during compilation of secondary translation unit
+                    &quot;/tmp/ep/workdir/profiles/42-bf59-c/md/12697/model/D3/Mock_
+                    HeatingActivate_SetHeatingCoil.c&quot;
+&quot;/tmp/ep/workdir/profiles/42-bf59-c/md/12697/model/Dd/Rte_Type.h&quot;, line 12:
+          warning: last line of file ends without a newline
+  #endif /* BTC_EP_EXTENSION_RTE_TYPE_H */
+                                          ^
+          detected during compilation of secondary translation unit
+                    &quot;/tmp/ep/workdir/profiles/42-bf59-c/md/12697/model/D3/Mock_
+                    HeatingActivate_SetHeatingCoil.c&quot;
+&quot;/tmp/ep/workdir/profiles/42-bf59-c/md/12697/model/Dd/Rte_Type.h&quot;, line 12:
+          warning: last line of file ends without a newline
+  #endif /* BTC_EP_EXTENSION_RTE_TYPE_H */
+                                          ^
+          detected during compilation of secondary translation unit
+                    &quot;/tmp/ep/workdir/profiles/42-bf59-c/md/12697/model/D3/Mock_
+                    HeatingActivate_SetHeatingCoil.c&quot;
+&quot;/tmp/ep/workdir/profiles/42-bf59-c/md/12697/model/Dd/Rte_Type.h&quot;, line 12:
+          warning: last line of file ends without a newline
+  #endif /* BTC_EP_EXTENSION_RTE_TYPE_H */
+                                          ^
+          detected during compilation of secondary translation unit
+                    &quot;/tmp/ep/workdir/profiles/42-bf59-c/md/12697/model/D3/Mock_
+                    HeatingActivate_SetHeatingCoil.c&quot;
+&quot;/tmp/ep/workdir/profiles/42-bf59-c/md/12697/model/Dd/Rte_Type.h&quot;, line 12:
+          warning: last line of file ends without a newline
+  #endif /* BTC_EP_EXTENSION_RTE_TYPE_H */
+                                          ^
+          detected during compilation of secondary translation unit
+                    &quot;/tmp/ep/workdir/profiles/42-bf59-c/md/12697/model/D3/Mock_
+                    HeatingActivate_SetHeatingCoil.c&quot;
+&quot;/tmp/ep/workdir/profiles/42-bf59-c/md/12697/model/Dd/Rte_Type.h&quot;, line 12:
+          warning: last line of file ends without a newline
+  #endif /* BTC_EP_EXTENSION_RTE_TYPE_H */
+                                          ^
+          detected during compilation of secondary translation unit
+                    &quot;/tmp/ep/workdir/profiles/42-bf59-c/md/12697/model/D3/Mock_
+                    HeatingActivate_SetHeatingCoil.c&quot;
+&quot;/tmp/ep/workdir/profiles/42-bf59-c/md/12697/model/Dd/Rte_Type.h&quot;, line 12:
+          warning: last line of file ends without a newline
+  #endif /* BTC_EP_EXTENSION_RTE_TYPE_H */
+                                          ^
+          detected during compilation of secondary translation unit
+                    &quot;/tmp/ep/workdir/profiles/42-bf59-c/md/12697/model/D3/Mock_
+                    HeatingActivate_SetHeatingCoil.c&quot;
+&quot;/tmp/ep/workdir/profiles/42-bf59-c/md/12697/model/Db/rtwtypes.h&quot;, line 47:
+          warning: last line of file ends without a newline
+  #endif /* RTWTYPES_H */
+                         ^
+          detected during compilation of secondary translation unit
+                    &quot;/tmp/ep/workdir/profiles/42-bf59-c/md/12697/model/D7/seat_
+                    heating_control_ep_rte_stub.c&quot;
+&quot;/tmp/ep/workdir/profiles/42-bf59-c/md/12697/model/Dd/Rte_Type.h&quot;, line 12:
+          warning: last line of file ends without a newline
+  #endif /* BTC_EP_EXTENSION_RTE_TYPE_H */
+                                          ^
+          detected during compilation of secondary translation unit
+                    &quot;/tmp/ep/workdir/profiles/42-bf59-c/md/12697/model/D7/seat_
+                    heating_control_ep_rte_stub.c&quot;
+&quot;/tmp/ep/workdir/profiles/42-bf59-c/md/12697/model/Dd/Rte_Type.h&quot;, line 12:
+          warning: last line of file ends without a newline
+  #endif /* BTC_EP_EXTENSION_RTE_TYPE_H */
+                                          ^
+          detected during compilation of secondary translation unit
+                    &quot;/tmp/ep/workdir/profiles/42-bf59-c/md/12697/model/D7/seat_
+                    heating_control_ep_rte_stub.c&quot;
+&quot;/tmp/ep/workdir/profiles/42-bf59-c/md/12697/model/Db/rtwtypes.h&quot;, line 47:
+          warning: last line of file ends without a newline
+  #endif /* RTWTYPES_H */
+                         ^
+          detected during compilation of secondary translation unit
+                    &quot;/tmp/ep/workdir/profiles/42-bf59-c/md/12697/model/D8/Rte_S
+                    eatHeatControl.c&quot;
+&quot;/tmp/ep/workdir/profiles/42-bf59-c/md/12697/model/Dd/Rte_Type.h&quot;, line 12:
+          warning: last line of file ends without a newline
+  #endif /* BTC_EP_EXTENSION_RTE_TYPE_H */
+                                          ^
+          detected during compilation of secondary translation unit
+                    &quot;/tmp/ep/workdir/profiles/42-bf59-c/md/12697/model/D8/Rte_S
+                    eatHeatControl.c&quot;
+&quot;/tmp/ep/workdir/profiles/42-bf59-c/md/12697/model/Db/rtwtypes.h&quot;, line 47:
+          warning: last line of file ends without a newline
+  #endif /* RTWTYPES_H */
+                         ^
+          detected during compilation of secondary translation unit
+                    &quot;/tmp/ep/workdir/profiles/42-bf59-c/md/12697/model/D3/Rte_C
+                    all_SeatHeatControl_HeatingActivate_SetHeatingCoil.c&quot;
+&quot;/tmp/ep/workdir/profiles/42-bf59-c/md/12697/model/Dd/Rte_Type.h&quot;, line 12:
+          warning: last line of file ends without a newline
+  #endif /* BTC_EP_EXTENSION_RTE_TYPE_H */
+                                          ^
+          detected during compilation of secondary translation unit
+                    &quot;/tmp/ep/workdir/profiles/42-bf59-c/md/12697/model/D3/Rte_C
+                    all_SeatHeatControl_HeatingActivate_SetHeatingCoil.c&quot;
+&quot;/tmp/ep/workdir/profiles/42-bf59-c/md/12697/model/Dd/Rte_Type.h&quot;, line 12:
+          warning: last line of file ends without a newline
+  #endif /* BTC_EP_EXTENSION_RTE_TYPE_H */
+                                          ^
+          detected during compilation of secondary translation unit
+                    &quot;/tmp/ep/workdir/profiles/42-bf59-c/md/12697/model/D3/Rte_C
+                    all_SeatHeatControl_HeatingActivate_SetHeatingCoil.c&quot;
+&quot;/tmp/ep/workdir/profiles/42-bf59-c/md/12697/model/Dd/Rte_Type.h&quot;, line 12:
+          warning: last line of file ends without a newline
+  #endif /* BTC_EP_EXTENSION_RTE_TYPE_H */
+                                          ^
+          detected during compilation of secondary translation unit
+                    &quot;/tmp/ep/workdir/profiles/42-bf59-c/md/12697/model/D3/Rte_C
+                    all_SeatHeatControl_HeatingActivate_SetHeatingCoil.c&quot;
+&quot;/tmp/ep/workdir/profiles/42-bf59-c/md/12697/model/Dd/Rte_Type.h&quot;, line 12:
+          warning: last line of file ends without a newline
+  #endif /* BTC_EP_EXTENSION_RTE_TYPE_H */
+                                          ^
+          detected during compilation of secondary translation unit
+                    &quot;/tmp/ep/workdir/profiles/42-bf59-c/md/12697/model/D3/Rte_C
+                    all_SeatHeatControl_HeatingActivate_SetHeatingCoil.c&quot;
+&quot;/tmp/ep/workdir/profiles/42-bf59-c/md/12697/model/Dd/Rte_Type.h&quot;, line 12:
+          warning: last line of file ends without a newline
+  #endif /* BTC_EP_EXTENSION_RTE_TYPE_H */
+                                          ^
+          detected during compilation of secondary translation unit
+                    &quot;/tmp/ep/workdir/profiles/42-bf59-c/md/12697/model/D3/Rte_C
+                    all_SeatHeatControl_HeatingActivate_SetHeatingCoil.c&quot;
+&quot;/tmp/ep/workdir/profiles/42-bf59-c/md/12697/model/Dd/Rte_Type.h&quot;, line 12:
+          warning: last line of file ends without a newline
+  #endif /* BTC_EP_EXTENSION_RTE_TYPE_H */
+                                          ^
+          detected during compilation of secondary translation unit
+                    &quot;/tmp/ep/workdir/profiles/42-bf59-c/md/12697/model/D3/Rte_C
+                    all_SeatHeatControl_HeatingActivate_SetHeatingCoil.c&quot;
+&quot;/tmp/ep/workdir/profiles/42-bf59-c/md/12697/model/Dd/Rte_Type.h&quot;, line 12:
+          warning: last line of file ends without a newline
+  #endif /* BTC_EP_EXTENSION_RTE_TYPE_H */
+                                          ^
+          detected during compilation of secondary translation unit
+                    &quot;/tmp/ep/workdir/profiles/42-bf59-c/md/12697/model/D3/Rte_C
+                    all_SeatHeatControl_HeatingActivate_SetHeatingCoil.c&quot;
+&quot;/tmp/ep/workdir/profiles/42-bf59-c/md/12697/model/Dd/Rte_Type.h&quot;, line 12:
+          warning: last line of file ends without a newline
+  #endif /* BTC_EP_EXTENSION_RTE_TYPE_H */
+                                          ^
+          detected during compilation of secondary translation unit
+                    &quot;/tmp/ep/workdir/profiles/42-bf59-c/md/12697/model/D3/Rte_C
+                    all_SeatHeatControl_HeatingActivate_SetHeatingCoil.c&quot;
+</td>
+              <td>Warning</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="WARNING_ICON"></td>
+              <td>Host compiler is configured to generate 64 bit binaries, model checking employs 32 bit semantics.</td>
+              <td>Warning</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="WARNING_ICON"></td>
+              <td>The integer kind for wchar_t in the target configuration is not supported. The value is ignored.
+</td>
+              <td>Warning</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="INFO_ICON"></td>
+              <td>No coverage goals selected for automatic stimuli vector generation for scope &quot;runa1&quot;.</td>
+              <td>Information</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="INFO_ICON"></td>
+              <td>No coverage goals selected for automatic stimuli vector generation for scope &quot;runa2&quot;.</td>
+              <td>Information</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="INFO_ICON"></td>
+              <td>No coverage goals selected for automatic stimuli vector generation for scope &quot;runa3&quot;.</td>
+              <td>Information</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="INFO_ICON"></td>
+              <td>No coverage goals selected for automatic stimuli vector generation for scope &quot;runa3&quot;.</td>
+              <td>Information</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="INFO_ICON"></td>
+              <td>No coverage goals selected for automatic stimuli vector generation for scope &quot;runa2&quot;.</td>
+              <td>Information</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="INFO_ICON"></td>
+              <td>No coverage goals selected for automatic stimuli vector generation for scope &quot;runa1&quot;.</td>
               <td>Information</td>
               <td></td>
             </tr>
@@ -1779,11 +2189,11 @@ function toggleSection(div_id, clickable_id ) {
     <div>
     <div class="sc-gauge">
         <div class="sc-background">
-            <div class="sc-percentage unreachable_blue" style="transform:rotate(159.048deg)"></div>
+            <div class="sc-percentage unreachable_blue" style="transform:rotate(162.857deg)"></div>
             <div class="sc-percentage justified_green" style="transform:rotate(159.048deg)"></div>
             <div class="sc-percentage covered" style="transform:rotate(159.048deg)"></div>
             <div class="sc-mask"></div>
-            <span class="sc-value">88.3%</span>
+            <span class="sc-value">90.4%</span>
         </div>
     <span style="font-size:14px;">Code Coverage (Handled Rate)</span>
     </div>
@@ -3048,12 +3458,12 @@ function toggleSection(div_id, clickable_id ) {
   <tr>
     <td>Decision/Branch (D)</td>
     <td>26</td>
+    <td>26</td>
+    <td>100.0%</td>
     <td>22</td>
     <td>84.6%</td>
-    <td>22</td>
-    <td>84.6%</td>
-    <td>0</td>
-    <td>0.0%</td>
+    <td>4</td>
+    <td>15.4%</td>
     <td>0</td>
     <td>0.0%</td>
   </tr>
@@ -3076,12 +3486,12 @@ function toggleSection(div_id, clickable_id ) {
   <tr>
     <td>C/DC and MC/DC (MCDC)</td>
     <td>54</td>
+    <td>54</td>
+    <td>100.0%</td>
     <td>50</td>
     <td>92.6%</td>
-    <td>50</td>
-    <td>92.6%</td>
-    <td>0</td>
-    <td>0.0%</td>
+    <td>4</td>
+    <td>7.4%</td>
     <td>0</td>
     <td>0.0%</td>
   </tr>
@@ -3270,17 +3680,44 @@ function toggleSection(div_id, clickable_id ) {
     <!-- Page Overview -->
     <div class="topicOverviewDiv">
             <div class="sectionDiv">
+                <a class="viewDetails" onclick="expandSectionOnNavigation('b2b_b2bTest_div',' b2b_b2bTest_section'); scrollToTargetAdjusted('b2b_b2bTest_section')">View Details</a>
+                <h3>Back-to-Back Test</h3>
+  <table>
+    <tr>
+    <td><span style="padding-right: 15px;">
+            <a class="link" onclick="expandSectionOnNavigation('SL MIL vs SIL_337g_section','SL MIL vs SIL_337g_header'); scrollToTargetAdjusted('SL MIL vs SIL_337g_header');">
+                 SL MIL vs SIL 
+            </a>
+        </span>
+    </td>
+    <td style="min-width:300px">
+      <div class="bar-chart">
+        
+        <div class="chart">
+    <div class="okBar bar size-9" style="flex-grow : 9"></div>
+    <div class="okBar bar size-0" style="flex-grow : 0"></div>
+    <div class="errorBar bar size-0" style="flex-grow : 0"></div>
+    <div class="errorBar bar size-0" style="flex-grow : 0"></div>
+        </div>
+      
+      </td>
+      <td><span style="padding-left: 15px;">100.0% Passed</span>
+      </div></td>
+      </tr>
+  </table>
+            </div>
+            <div class="sectionDiv">
                 <a class="viewDetails" onclick="expandSectionOnNavigation('b2b_codeAnalysis_div',' b2b_codeAnalysis_section'); scrollToTargetAdjusted('b2b_codeAnalysis_section')">View Details</a>
                 <h3>Code Analysis</h3>
                     <div style="display:flex; justify-content:center;">
     <div>
     <div class="sc-gauge">
         <div class="sc-background">
-            <div class="sc-percentage unreachable_blue" style="transform:rotate(159.048deg)"></div>
+            <div class="sc-percentage unreachable_blue" style="transform:rotate(162.857deg)"></div>
             <div class="sc-percentage justified_green" style="transform:rotate(159.048deg)"></div>
             <div class="sc-percentage covered" style="transform:rotate(159.048deg)"></div>
             <div class="sc-mask"></div>
-            <span class="sc-value">88.3%</span>
+            <span class="sc-value">90.4%</span>
         </div>
     <span style="font-size:14px;">Code Coverage (Handled Rate)</span>
     </div>
@@ -3318,8 +3755,492 @@ function toggleSection(div_id, clickable_id ) {
         <!-- Page Sections -->
         <h2 style="padding-left:20px;">Back-to-Back Testing</h2>
         <div class="sectionPageDiv">
+            <h3 id="b2b_b2bTest_section" onclick="toggleSection('b2b_b2bTest_div','b2b_b2bTest_section')" class="extended anchored">
+                1. Back-to-Back Test
+            </h3>
+            <div id="b2b_b2bTest_div">
+  <h3>Test Results Overview</h3>
+  <table class="table">
+    <tr>
+      <th>Name</th>
+      <th>Scopes</th>
+      <th>Status</th>
+    </tr>
+      <tr>
+        <td>
+        <a class="link" onclick="expandSectionOnNavigation('SL MIL vs SIL_337g_section','SL MIL vs SIL_337g_header'); scrollToTargetAdjusted('SL MIL vs SIL_337g_header');">
+        SL MIL vs SIL 
+        </a>
+        </td>
+        <td>
+          Wrapper_seat_heating_control         </td>
+        <td><div class="        ok-glyph ok-color
+"> Passed</div></td>
+      </tr>
+  </table>
+
+    <h3 class="collapsed anchored" onclick="toggleSection('SL MIL vs SIL_337g_section','SL MIL vs SIL_337g_header')" id="SL MIL vs SIL_337g_header">SL MIL vs SIL</h3>
+    <div class="hidden" id="SL MIL vs SIL_337g_section">
+    <h4>Comparison Results</h4>
+      <table class="table">
+  <tr>
+    <th></th>
+    <th>Name</th>
+    <th>Length</th>
+    <th>Result</th>
+  </tr>
+      <tr>
+        <td>
+            #1
+        </td>
+        <td>
+                  <span class="icon-sdc" title="No problems during comparison"></span>:
+ SL MIL_Stage1_Request <br>
+                  <span class="icon-sdc" title="No problems during comparison"></span>:
+ SIL_Stage1_Request
+        </td>
+        <td> 7</td>
+        <td><div class="        ok-glyph ok-color
+"> Passed</div> </td>
+      </tr>
+      <tr>
+        <td>
+            #2
+        </td>
+        <td>
+                  <span class="icon-sdc" title="No problems during comparison"></span>:
+ SL MIL_TurnOff_Request <br>
+                  <span class="icon-sdc" title="No problems during comparison"></span>:
+ SIL_TurnOff_Request
+        </td>
+        <td> 22</td>
+        <td><div class="        ok-glyph ok-color
+"> Passed</div> </td>
+      </tr>
+      <tr>
+        <td>
+            #3
+        </td>
+        <td>
+                  <span class="icon-sdc" title="No problems during comparison"></span>:
+ SL MIL_Stage1_LEDs <br>
+                  <span class="icon-sdc" title="No problems during comparison"></span>:
+ SIL_Stage1_LEDs
+        </td>
+        <td> 7</td>
+        <td><div class="        ok-glyph ok-color
+"> Passed</div> </td>
+      </tr>
+      <tr>
+        <td>
+            #4
+        </td>
+        <td>
+                  <span class="icon-sdc" title="No problems during comparison"></span>:
+ SL MIL_Stage3_Request <br>
+                  <span class="icon-sdc" title="No problems during comparison"></span>:
+ SIL_Stage3_Request
+        </td>
+        <td> 17</td>
+        <td><div class="        ok-glyph ok-color
+"> Passed</div> </td>
+      </tr>
+      <tr>
+        <td>
+            #5
+        </td>
+        <td>
+                  <span class="icon-sdc" title="No problems during comparison"></span>:
+ SL MIL_TurnOFF_LEDs <br>
+                  <span class="icon-sdc" title="No problems during comparison"></span>:
+ SIL_TurnOFF_LEDs
+        </td>
+        <td> 23</td>
+        <td><div class="        ok-glyph ok-color
+"> Passed</div> </td>
+      </tr>
+      <tr>
+        <td>
+            #6
+        </td>
+        <td>
+                  <span class="icon-sdc" title="No problems during comparison"></span>:
+ SL MIL_Stage3_LEDs <br>
+                  <span class="icon-sdc" title="No problems during comparison"></span>:
+ SIL_Stage3_LEDs
+        </td>
+        <td> 17</td>
+        <td><div class="        ok-glyph ok-color
+"> Passed</div> </td>
+      </tr>
+      <tr>
+        <td>
+            #7
+        </td>
+        <td>
+                  <span class="icon-sdc" title="No problems during comparison"></span>:
+ SL MIL_Condition Check <br>
+                  <span class="icon-sdc" title="No problems during comparison"></span>:
+ SIL_Condition Check
+        </td>
+        <td> 8</td>
+        <td><div class="        ok-glyph ok-color
+"> Passed</div> </td>
+      </tr>
+      <tr>
+        <td>
+            #8
+        </td>
+        <td>
+                  <span class="icon-sdc" title="No problems during comparison"></span>:
+ SL MIL_Stage2_LEDs <br>
+                  <span class="icon-sdc" title="No problems during comparison"></span>:
+ SIL_Stage2_LEDs
+        </td>
+        <td> 12</td>
+        <td><div class="        ok-glyph ok-color
+"> Passed</div> </td>
+      </tr>
+      <tr>
+        <td>
+            #9
+        </td>
+        <td>
+                  <span class="icon-sdc" title="No problems during comparison"></span>:
+ SL MIL_Stage2_Request <br>
+                  <span class="icon-sdc" title="No problems during comparison"></span>:
+ SIL_Stage2_Request
+        </td>
+        <td> 12</td>
+        <td><div class="        ok-glyph ok-color
+"> Passed</div> </td>
+      </tr>
+    </table>
+
+    <h4 class="extended anchored" onclick="toggleSection('SL MIL vs SIL_337g_toleranceDef_table','SL MIL vs SIL_337g_toleranceDef_header')" id="SL MIL vs SIL_337g_toleranceDef_header">
+        Tolerance Definitions
+    </h4>
+      <table class="table" id="SL MIL vs SIL_337g_toleranceDef_table">
+        <tr>
+          <th>Check</th>
+          
+          <th>Name</th>
+
+          <th>Kind</th>
+
+          <th>Data Type</th>
+
+          <th>Resolution</th>
+
+          <th>Offset</th>
+
+          <th>Rel. Tolerance</th>
+
+          <th>Abs. Tolerance</th>
+
+          <th>Lead Tolerance</th>
+
+          <th>Lag Tolerance</th>
+        </tr>
+
+          <tr>
+            <td style="text-align:center">
+                <div class="ok-glyph ok-color"></div>
+            </td>
+            <td>ActivationCondition_write</td>
+
+            <td>Output</td>
+
+            <td>boolean</td>
+
+            <td>2^0</td>
+
+            <td>0.0</td>
+
+            <td>0.0%</td>
+
+            <td>0.0</td>
+
+            <td>0.0</td>
+
+            <td>0.0</td>
+
+          </tr>
+
+          <tr>
+            <td style="text-align:center">
+                <div class="ok-glyph ok-color"></div>
+            </td>
+            <td>LEDFeedback_LEDFeedback(1)</td>
+
+            <td>Output</td>
+
+            <td>boolean</td>
+
+            <td>2^0</td>
+
+            <td>0.0</td>
+
+            <td>0.0%</td>
+
+            <td>0.0</td>
+
+            <td>0.0</td>
+
+            <td>0.0</td>
+
+          </tr>
+
+          <tr>
+            <td style="text-align:center">
+                <div class="ok-glyph ok-color"></div>
+            </td>
+            <td>LEDFeedback_LEDFeedback(2)</td>
+
+            <td>Output</td>
+
+            <td>boolean</td>
+
+            <td>2^0</td>
+
+            <td>0.0</td>
+
+            <td>0.0%</td>
+
+            <td>0.0</td>
+
+            <td>0.0</td>
+
+            <td>0.0</td>
+
+          </tr>
+
+          <tr>
+            <td style="text-align:center">
+                <div class="ok-glyph ok-color"></div>
+            </td>
+            <td>LEDFeedback_LEDFeedback(3)</td>
+
+            <td>Output</td>
+
+            <td>boolean</td>
+
+            <td>2^0</td>
+
+            <td>0.0</td>
+
+            <td>0.0%</td>
+
+            <td>0.0</td>
+
+            <td>0.0</td>
+
+            <td>0.0</td>
+
+          </tr>
+
+          <tr>
+            <td style="text-align:center">
+                <div class="ok-glyph ok-color"></div>
+            </td>
+            <td>LEDFeedback_LEDFeedback_write(1)</td>
+
+            <td>Output</td>
+
+            <td>boolean</td>
+
+            <td>2^0</td>
+
+            <td>0.0</td>
+
+            <td>0.0%</td>
+
+            <td>0.0</td>
+
+            <td>0.0</td>
+
+            <td>0.0</td>
+
+          </tr>
+
+          <tr>
+            <td style="text-align:center">
+                <div class="ok-glyph ok-color"></div>
+            </td>
+            <td>LEDFeedback_LEDFeedback_write(2)</td>
+
+            <td>Output</td>
+
+            <td>boolean</td>
+
+            <td>2^0</td>
+
+            <td>0.0</td>
+
+            <td>0.0%</td>
+
+            <td>0.0</td>
+
+            <td>0.0</td>
+
+            <td>0.0</td>
+
+          </tr>
+
+          <tr>
+            <td style="text-align:center">
+                <div class="ok-glyph ok-color"></div>
+            </td>
+            <td>LEDFeedback_LEDFeedback_write(3)</td>
+
+            <td>Output</td>
+
+            <td>boolean</td>
+
+            <td>2^0</td>
+
+            <td>0.0</td>
+
+            <td>0.0%</td>
+
+            <td>0.0</td>
+
+            <td>0.0</td>
+
+            <td>0.0</td>
+
+          </tr>
+
+          <tr>
+            <td style="text-align:center">
+                <div class="ok-glyph ok-color"></div>
+            </td>
+            <td>SystemActive</td>
+
+            <td>Local</td>
+
+            <td>boolean</td>
+
+            <td>2^0</td>
+
+            <td>0.0</td>
+
+            <td>0.0%</td>
+
+            <td>0.0</td>
+
+            <td>0.0</td>
+
+            <td>0.0</td>
+
+          </tr>
+
+          <tr>
+            <td style="text-align:center">
+                <div class="ok-glyph ok-color"></div>
+            </td>
+            <td>SystemActive</td>
+
+            <td>Local</td>
+
+            <td>boolean</td>
+
+            <td>2^0</td>
+
+            <td>0.0</td>
+
+            <td>0.0%</td>
+
+            <td>0.0</td>
+
+            <td>0.0</td>
+
+            <td>0.0</td>
+
+          </tr>
+
+          <tr>
+            <td style="text-align:center">
+                <div class="ok-glyph ok-color"></div>
+            </td>
+            <td>TemperatureStage_write</td>
+
+            <td>Output</td>
+
+            <td>uint8</td>
+
+            <td>2^0</td>
+
+            <td>0.0</td>
+
+            <td>0.0%</td>
+
+            <td>0.0</td>
+
+            <td>0.0</td>
+
+            <td>0.0</td>
+
+          </tr>
+
+          <tr>
+            <td style="text-align:center">
+                <div class="ok-glyph ok-color"></div>
+            </td>
+            <td>dsout_HeatingActivate_SetHeatingCoil_temp@dsout_HeatingActivate_SetHeatingCoil_temp</td>
+
+            <td>Output</td>
+
+            <td>uint8</td>
+
+            <td>2^0</td>
+
+            <td>0.0</td>
+
+            <td>0.0%</td>
+
+            <td>0.0</td>
+
+            <td>0.0</td>
+
+            <td>0.0</td>
+
+          </tr>
+
+          <tr>
+            <td style="text-align:center">
+                <div class="ok-glyph ok-color"></div>
+            </td>
+            <td>dsout_HeatingActivate_SetHeatingCoil_temp@dsout_HeatingActivate_SetHeatingCoil_temp</td>
+
+            <td>Output</td>
+
+            <td>uint8</td>
+
+            <td>2^0</td>
+
+            <td>0.0</td>
+
+            <td>0.0%</td>
+
+            <td>0.0</td>
+
+            <td>0.0</td>
+
+            <td>0.0</td>
+
+          </tr>
+      </table>
+    
+    <h4>Execution Record Comparisons</h4>
+
+    There are no failed results.
+    </div>
+            </div>
+        </div>
+        <div class="sectionPageDiv">
             <h3 id="b2b_codeAnalysis_section" onclick="toggleSection('b2b_codeAnalysis_div','b2b_codeAnalysis_section')" class="extended anchored">
-                1. Code Analysis
+                2. Code Analysis
             </h3>
             <div id="b2b_codeAnalysis_div">
 
@@ -3351,12 +4272,12 @@ function toggleSection(div_id, clickable_id ) {
   <tr>
     <td>Decision/Branch (D)</td>
     <td>26</td>
+    <td>26</td>
+    <td>100.0%</td>
     <td>22</td>
     <td>84.6%</td>
-    <td>22</td>
-    <td>84.6%</td>
-    <td>0</td>
-    <td>0.0%</td>
+    <td>4</td>
+    <td>15.4%</td>
     <td>0</td>
     <td>0.0%</td>
   </tr>
@@ -3379,12 +4300,12 @@ function toggleSection(div_id, clickable_id ) {
   <tr>
     <td>C/DC and MC/DC (MCDC)</td>
     <td>54</td>
+    <td>54</td>
+    <td>100.0%</td>
     <td>50</td>
     <td>92.6%</td>
-    <td>50</td>
-    <td>92.6%</td>
-    <td>0</td>
-    <td>0.0%</td>
+    <td>4</td>
+    <td>7.4%</td>
     <td>0</td>
     <td>0.0%</td>
   </tr>
