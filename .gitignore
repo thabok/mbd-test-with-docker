@@ -12,6 +12,7 @@
 *_ep_stubs/
 *_btcdata/.cache/
 *.lic
+reports/
 
 # Python
 __pycache__/
