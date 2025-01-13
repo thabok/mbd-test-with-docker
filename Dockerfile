@@ -3,8 +3,7 @@
 ARG EP_RELEASE=24.3p0
 ARG MATLAB_RELEASE=R2023b
 
-#FROM btces/ep:${EP_RELEASE} AS ep
-FROM harbor.btc-es.local/ep/ep-${EP_RELEASE} AS ep
+FROM btces/ep:${EP_RELEASE} AS ep
 FROM mathworks/matlab:${MATLAB_RELEASE} AS matlab
 
 # ----------------------------------------------------------------------------------------
